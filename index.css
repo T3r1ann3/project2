@@ -52,11 +52,11 @@ color: var(--secondaryColor);
 }
 
 .classFig1{
-  background-image: url(images/class.jpg);
+  background-image: url(class.jpg);
 }
 
 .classFig2{
-  background-image: url(images/student.jpg);
+  background-image: url(student.jpg);
 }
 
 .classP1, .classP2{
@@ -73,7 +73,7 @@ color: var(--secondaryColor);
 }
 
 .skinFig{
-  background-image: url(images/skin.jpg);
+  background-image: url(skin.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 400px;
@@ -111,7 +111,7 @@ color: var(--secondaryColor);
   }
 
 .peaceFig{
-  background-image: url(images/peace.jpg);
+  background-image: url(peace.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 700px;
