@@ -1,0 +1,156 @@
+*{box-sizing: border-box;}
+:root{
+  --primaryColor:#ffe4d9;
+  --primaryLight:#ffffff;
+  --primaryDark:#ccb2a8;
+  --secondaryColor:#2a2e33;
+  --secondaryLight:#53575c;
+  --secondaryDark:#00030c;
+
+}
+
+.title{
+text-align: center;
+background-color: var(--primaryDark);
+color: var(--secondaryColor);
+}
+
+.title{
+  right: 50px;
+  animation-name: slide;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide{
+  from{transform: translateX(-10%);}
+  to{transform: translateX(10%);}
+}
+
+.classPics, .skinPic, .peacePic{
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.classFig1, .classFig2{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 500px;
+  height: 430px;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  filter: saturate(80%);
+  border: outset var(--secondaryColor) 10px;
+}
+
+.classFig1{
+  background-image: url(images/class.jpg);
+}
+
+.classFig2{
+  background-image: url(images/student.jpg);
+}
+
+.classP1, .classP2{
+  position: absolute;
+  background-color:rgba(255, 248, 248, 0.4) ;
+  color: var(--secondaryDark);
+  font-family: "Bell MT";
+  font-weight: bold;
+  text-align: center;
+  bottom: 2%;
+  left: 5%;
+  right: 5%;
+  padding: 1px 2px;
+}
+
+.skinFig{
+  background-image: url(images/skin.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 400px;
+  height: 500px;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  border: outset var(--primaryDark) 20px;
+}
+
+.middleText{
+  text-align: center;
+  background-color:rgba(255, 248, 248, 0.4);
+  color: var(--secondaryDark);
+  font-family: "Bell MT";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.msg{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  left: 27%;
+  right: 25%;
+  text-align: center;
+  animation: zoomMSG 9s infinite;
+  }
+  @keyframes zoomMSG {
+    0%{transform: scale(0) translate(0,0);}
+    25%{transform: scale(1); color: var(--primaryDark);}
+    50%{transform: scale(0.3) translate(100px, 50px);}
+    75%{transform: scale(2); color: var(--primaryLight)}
+    100%{transform: scale(0) translate(-50px, -100px); color: var(secondaryDark)}
+  }
+
+.peaceFig{
+  background-image: url(images/peace.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 700px;
+  height: 500px;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  border: outset var(--primaryDark) 20px;
+}
+
+.peaceP{
+  position: absolute;
+  background-color:rgba(255, 248, 248, 0.4) ;
+  color: var(--secondaryDark);
+  font-family: "Bell MT";
+  font-weight: bold;
+  text-align: center;
+  bottom: 2%;
+  left: 5%;
+  right: 5%;
+  padding: 1px 2px;
+}
+
+.endText{
+  text-align: center;
+  background-color:rgba(255, 248, 248, 0.4);
+  color: var(--secondaryDark);
+  font-family: "Bell MT";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+footer{
+  text-align: center;
+  background-color: var(--primaryDark);
+  color: var(--secondaryLight);
+  font-size: 25px;
+}
